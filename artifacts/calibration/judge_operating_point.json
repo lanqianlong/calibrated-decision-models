@@ -1,0 +1,39 @@
+{
+  "calibration": {
+    "false_negatives": 0,
+    "false_positives": 493,
+    "fnr": 0.0,
+    "fpr": 0.986,
+    "negative_support": 500,
+    "positive_support": 500,
+    "sample_count": 1000,
+    "true_negatives": 7,
+    "true_positives": 500
+  },
+  "decision_rule": "calibrated_probability_gte",
+  "format_version": 1,
+  "model_id": "azure-chat-completions-gpt-5-5-2026-04-24-sandbox",
+  "prompt_hash": "dc15a645fcfdf3f6642175a30129f0fbd54a0271ac349a1c52c7bb23646cbee7",
+  "prompt_id": "llm-judge-candidate-effect-v1",
+  "provenance": {
+    "prediction_manifest": {
+      "path": "results/llm_judge_gpt55/main_v1/calibration/manifest.json",
+      "sha256": "acdce870a6c67f6b2466aa7f23c3a30a1b16c5cc0ef0f9297b04a8a124ce6c91"
+    },
+    "predictions": {
+      "path": "results/llm_judge_gpt55/main_v1/calibration/predictions.jsonl",
+      "sha256": "56ebffdbf9305b9d1e9f5c13f747f3da55825957a71eee22da71c2efbbbd3ec5"
+    },
+    "samples": {
+      "path": "data/frozen/reviewer_v1/calibration.jsonl",
+      "sha256": "ae1b7a8411bf01214aa1e9844e60e9d6a4d60a537843da4d74b6529e6ff53347"
+    },
+    "temperature_artifact": {
+      "path": "results/llm_judge_gpt55/main_v1/calibration/calibration.json",
+      "sha256": "e51ea7f15d720e336a48f92e97c9255f86c40b9be658d962148a8c190df2d698"
+    }
+  },
+  "target_fnr": 0.01,
+  "temperature": 1.590979118195362,
+  "threshold": 0.05273827690654611
+}

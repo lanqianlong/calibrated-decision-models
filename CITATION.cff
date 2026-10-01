@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying paper."
+type: software
+title: "Calibrated Decision Models for LLM Security: Reproducibility Artifact"
+version: "1.0.0"
+date-released: "2026-10-01"
+authors:
+  - family-names: "Qianlong Lan"
+preferred-citation:
+  type: article
+  title: "FROM DETECTION TO DECISION: CALIBRATION AND DEFERRAL FOR PROMPT-INJECTION DETECTION"
+  authors:
+    - family-names: "Qianlong Lan"
+  year: 2026

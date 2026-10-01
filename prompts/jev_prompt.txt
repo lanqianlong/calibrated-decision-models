@@ -1,0 +1,2 @@
+Jev is evaluated as the native TypeSafe prompt-injection detector (`jev-latest`).
+The paper uses Jev's native probability output directly; no custom natural-language prompt is tuned or applied in this artifact.

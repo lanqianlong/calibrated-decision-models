@@ -1,0 +1,164 @@
+{
+  "costs": {
+    "false_negative": 100.0,
+    "false_positive": 1.0,
+    "review": 0.5
+  },
+  "dataset": {
+    "name": "pids_bench_v3",
+    "sample_count": 2000,
+    "split": "calibration"
+  },
+  "format_version": 1,
+  "gates": {
+    "jev_native": {
+      "automatic_coverage": 1.0,
+      "candidate_count": 4950,
+      "confusion": {
+        "fn": 0,
+        "fp": 985,
+        "tn": 0,
+        "tp": 1015
+      },
+      "escalation_count": 0,
+      "escalation_rate": 0.0,
+      "fnr": 0.0,
+      "fpr": 1.0,
+      "mean_latency_ms": 207.5345212434695,
+      "normalized_cost": 0.4925,
+      "status": "selected",
+      "tau_high": 0.01,
+      "tau_low": 0.0
+    },
+    "pg2_22m_calibrated": {
+      "automatic_coverage": 1.0,
+      "candidate_count": 2003001,
+      "confusion": {
+        "fn": 0,
+        "fp": 985,
+        "tn": 0,
+        "tp": 1015
+      },
+      "escalation_count": 0,
+      "escalation_rate": 0.0,
+      "fnr": 0.0,
+      "fpr": 1.0,
+      "mean_latency_ms": 24.88414878450002,
+      "normalized_cost": 0.4925,
+      "status": "selected",
+      "tau_high": 0.16697729143354,
+      "tau_low": 0.0
+    },
+    "pg2_22m_raw": {
+      "automatic_coverage": 1.0,
+      "candidate_count": 2003001,
+      "confusion": {
+        "fn": 0,
+        "fp": 985,
+        "tn": 0,
+        "tp": 1015
+      },
+      "escalation_count": 0,
+      "escalation_rate": 0.0,
+      "fnr": 0.0,
+      "fpr": 1.0,
+      "mean_latency_ms": 24.88414878450002,
+      "normalized_cost": 0.4925,
+      "status": "selected",
+      "tau_high": 0.0005359414499253035,
+      "tau_low": 0.0
+    },
+    "pg2_86m_calibrated": {
+      "automatic_coverage": 1.0,
+      "candidate_count": 2003001,
+      "confusion": {
+        "fn": 0,
+        "fp": 985,
+        "tn": 0,
+        "tp": 1015
+      },
+      "escalation_count": 0,
+      "escalation_rate": 0.0,
+      "fnr": 0.0,
+      "fpr": 1.0,
+      "mean_latency_ms": 61.527300475500006,
+      "normalized_cost": 0.4925,
+      "status": "selected",
+      "tau_high": 0.22877844003135142,
+      "tau_low": 0.0
+    },
+    "pg2_86m_raw": {
+      "automatic_coverage": 1.0,
+      "candidate_count": 2003001,
+      "confusion": {
+        "fn": 0,
+        "fp": 985,
+        "tn": 0,
+        "tp": 1015
+      },
+      "escalation_count": 0,
+      "escalation_rate": 0.0,
+      "fnr": 0.0,
+      "fpr": 1.0,
+      "mean_latency_ms": 61.527300475500006,
+      "normalized_cost": 0.4925,
+      "status": "selected",
+      "tau_high": 0.0003172779397573322,
+      "tau_low": 0.0
+    }
+  },
+  "parameters_sha256": "f1df86e1454a8b3739a61ea76e7fc35136abbba919c30b40e05a5610740f4e85",
+  "provenance": {
+    "gate_predictions": {
+      "jev_native": {
+        "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/jev.native.jsonl",
+        "sha256": "aafef4c9b8c97744ca0fffde59fbb00d099c4caa93059ececa85b793a5c4af10"
+      },
+      "pg2_22m_calibrated": {
+        "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/pg22.calibrated.jsonl",
+        "sha256": "c756cfb963271c9fdffdd42b553dd10b032a4a0f115e496dfa434f8fe183a165"
+      },
+      "pg2_22m_raw": {
+        "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/pg22.raw.jsonl",
+        "sha256": "a69b658472c3654cb97e76006c9d205baeab2c0c92a6e1f9b690206b7ade5704"
+      },
+      "pg2_86m_calibrated": {
+        "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/pg86.calibrated.jsonl",
+        "sha256": "2afa827995cada84c7f0a591888c3fbb75a7cddf8738f8d0452b86bc18eccba9"
+      },
+      "pg2_86m_raw": {
+        "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/pg86.raw.jsonl",
+        "sha256": "9516e7d34f1ed0b3c13d5eca4d6fb6e3ef916a0987f94a969e582da108d98da5"
+      }
+    },
+    "reviewer_operating_point": {
+      "path": "${REPOSITORY_ROOT}/results/llm_judge_gpt55/main_v1/calibration/operating_point.json",
+      "sha256": "b06a3abc108f7a214aa49581f6af84cccd53a940849fecea08eeca0bdef72415"
+    },
+    "reviewer_predictions": {
+      "path": "${REPOSITORY_ROOT}/results/main_v1/policy_calibration/judge.operating-point.jsonl",
+      "sha256": "6b60ab67f9282ed1e6308da5044ebaac02f815ccfa96da2a7ec18b317c1f1ee1"
+    },
+    "samples": {
+      "path": "${REPOSITORY_ROOT}/data/frozen/v1/calibration.jsonl",
+      "sha256": "d4e21751bc74c99f53ad6538e3f75e420d6b77af44058ac89b3564bfeff33953"
+    }
+  },
+  "reviewer": {
+    "decision_rule": "calibrated_probability_gte",
+    "model_id": "azure-chat-completions-gpt-5-5-2026-04-24-sandbox",
+    "prompt_hash": "dc15a645fcfdf3f6642175a30129f0fbd54a0271ac349a1c52c7bb23646cbee7",
+    "prompt_id": "llm-judge-candidate-effect-v1",
+    "temperature": 1.590979118195362,
+    "threshold": 0.05273827690654611
+  },
+  "selection_rule": [
+    "escalation_count",
+    "false_positive_count",
+    "normalized_cost",
+    "mean_latency_ms",
+    "tau_low_descending",
+    "tau_high_descending"
+  ],
+  "target_fnr": 0.01
+}
